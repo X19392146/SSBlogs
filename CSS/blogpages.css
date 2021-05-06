@@ -1,0 +1,142 @@
+/* Removing Bullet Points From List*/
+
+
+ul {
+	list-style-type: none;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	text-decoration: underline;
+}
+
+/*Floating List Elements to the left*/
+li {
+  float: left;
+}
+
+/*Styling Nav Bar*/
+li a {
+	font-family: Georgia, Times, serif;
+	display: block;
+	color: #999999;
+	text-align: center;
+	padding: 13px 61px;
+	text-decoration: none;
+	font-size: 27px;
+}
+
+/* Change the link color to #e6ffe6 (Pastel Green) on hover */
+li a:hover {
+	background-color: #B9D8D2;
+	color: #ffffff;
+}
+
+/*Styling Heading 1 */
+h1 {
+	text-align: center;
+	padding-right: 23px;
+	margin: 30px auto;
+	max-width: 600px;
+	position: relative;
+	
+}
+
+/*Setting Line Before Heading 1*/
+h1:before {
+  content: "";
+  display: block;
+  width: 605px;
+  height: 1px;
+  background: #000;
+  left: -400px;
+  top: 50%;
+  position: absolute;
+}
+
+/*Setting Line After Heading 1*/
+h1:after {
+  content: "";
+  display: block;
+  width: 670px;
+  height: 1px;
+  background: #000;
+  right: -400px;
+  top: 50%;
+  position: absolute;
+  
+}
+
+/*blog*/
+
+body {
+  font-family: Arial;
+ 
+  background: #f1f1f1;
+
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 40px;
+}
+
+/*  image */
+.img {
+  width: 95%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Georgia, Times, serif;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+ol li {
+	float: left;
+	display: block;
+}
